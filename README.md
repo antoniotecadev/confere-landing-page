@@ -41,5 +41,5 @@ npm run dev
 
 ## Links
 
-- [Landing Page](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID)
+- [Landing Page](https://confere-landing-page.vercel.app)
 - Em breve na Google Play Store

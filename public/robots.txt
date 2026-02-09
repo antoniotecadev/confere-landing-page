@@ -14,4 +14,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://confere-lading-page.vercel.app/site.webmanifest
+Sitemap: https://confere-landing-page.vercel.app/site.webmanifest
