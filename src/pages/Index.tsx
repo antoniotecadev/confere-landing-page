@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustBadges from "@/components/TrustBadges";
 import ProblemSection from "@/components/ProblemSection";
+import SocialProof from "@/components/SocialProof";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Impact from "@/components/Impact";
@@ -18,6 +19,7 @@ const Index = () => {
       <Hero />
       <TrustBadges />
       <ProblemSection />
+      <SocialProof />
       <Features />
       <HowItWorks />
       <Impact />
