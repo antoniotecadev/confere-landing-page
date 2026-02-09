@@ -1,10 +1,18 @@
 # Confere 🛒
 
+<div align="center">
+  <img src="https://github.com/antoniotecadev/confere-landing-page/blob/main/public/banner-confere-landing-page.png" alt="Confere" width="100%">
+</div>
+
+## 🎁 Sobre o Projecto
+
 **Nunca Mais Pague a Mais nos Supermercados!**
 
 App angolana que protege consumidores contra erros de cobrança em supermercados. Confere automaticamente o valor das tuas compras e detecta erros de cobrança.
 
 🇦🇴 Feito em Angola, para Angola
+
+Landing page oficial da aplicação [Confere](https://confere-landing-page.vercel.app/)
 
 ## Funcionalidades
 
