@@ -1,8 +1,11 @@
-const badges = [
-  { icon: "🔒", label: "100% Seguro" },
-  { icon: "🇦🇴", label: "Feito em Angola" },
-  { icon: "📱", label: "Offline First" },
-  { icon: "💯", label: "Grátis" },
+import { Lock, MapPin, Smartphone, BadgeCheck } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+const badges: { icon: LucideIcon; label: string }[] = [
+  { icon: Lock, label: "100% Seguro" },
+  { icon: MapPin, label: "Feito em Angola" },
+  { icon: Smartphone, label: "Offline First" },
+  { icon: BadgeCheck, label: "Grátis" },
 ];
 
 const TrustBadges = () => (
@@ -10,7 +13,7 @@ const TrustBadges = () => (
     <div className="container flex flex-wrap justify-center gap-6 md:gap-12">
       {badges.map((b) => (
         <div key={b.label} className="flex items-center gap-2 text-sm font-semibold text-foreground/80">
-          <span className="text-xl">{b.icon}</span>
+          <b.icon className="w-5 h-5 text-primary" />
           {b.label}
         </div>
       ))}

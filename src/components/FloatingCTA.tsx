@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Download } from "lucide-react";
 
 const FloatingCTA = () => {
   const [visible, setVisible] = useState(false);
@@ -17,7 +18,8 @@ const FloatingCTA = () => {
         href="#download"
         className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-xl shadow-primary/30 animate-pulse-slow"
       >
-        ▶ Baixar App
+        <Download className="w-4 h-4" />
+        Baixar App
       </a>
     </div>
   );

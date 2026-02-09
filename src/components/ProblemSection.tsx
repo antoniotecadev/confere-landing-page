@@ -23,7 +23,7 @@ const ProblemSection = () => (
         {/* Problem */}
         <div className="bg-card rounded-2xl p-8 shadow-sm border border-border">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Já te aconteceu? 😤
+            Já te aconteceu?
           </h2>
           <p className="text-sm font-semibold text-destructive/80 uppercase tracking-wide mb-4">
             A Realidade nos Supermercados
@@ -41,7 +41,7 @@ const ProblemSection = () => (
         {/* Solution */}
         <div className="gradient-success rounded-2xl p-8 shadow-sm">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-            Com Confere, tens o controlo! ✅
+            Com Confere, tens o controlo!
           </h2>
           <p className="text-sm font-semibold text-success uppercase tracking-wide mb-4">
             A Solução

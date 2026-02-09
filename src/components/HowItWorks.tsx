@@ -1,28 +1,31 @@
-const steps = [
+import { ShoppingCart, Plus, CreditCard, CheckCircle } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+const steps: { num: number; icon: LucideIcon; title: string; desc: string; color: string }[] = [
   {
     num: 1,
-    emoji: "🛒",
+    icon: ShoppingCart,
     title: "Cria um Carrinho",
     desc: "Escolhe o supermercado e define teu orçamento (opcional)",
     color: "bg-primary",
   },
   {
     num: 2,
-    emoji: "➕",
+    icon: Plus,
     title: "Adiciona Produtos",
     desc: "Vai adicionando produtos enquanto compras. Tira fotos se quiseres!",
     color: "bg-primary",
   },
   {
     num: 3,
-    emoji: "💳",
+    icon: CreditCard,
     title: "No Caixa, Compara",
     desc: "Vê o valor calculado e insere o valor que te cobraram",
     color: "bg-primary",
   },
   {
     num: 4,
-    emoji: "✓",
+    icon: CheckCircle,
     title: "Recebe o Resultado",
     desc: "Verde = OK | Laranja = Erro (reclama!) | Azul = Economizaste",
     color: "bg-success",
@@ -52,7 +55,9 @@ const HowItWorks = () => (
               >
                 {s.num}
               </div>
-              <span className="mt-4 text-3xl">{s.emoji}</span>
+              <div className="mt-4 w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <s.icon className="w-8 h-8 text-primary" />
+              </div>
               <h3 className="mt-3 text-lg font-bold text-foreground">{s.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
             </div>
@@ -73,8 +78,10 @@ const HowItWorks = () => (
               {i < steps.length - 1 && <div className="w-0.5 flex-1 bg-border mt-2" />}
             </div>
             <div className="pb-4">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl">{s.emoji}</span>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <s.icon className="w-5 h-5 text-primary" />
+                </div>
                 <h3 className="text-lg font-bold text-foreground">{s.title}</h3>
               </div>
               <p className="mt-1 text-sm text-muted-foreground">{s.desc}</p>

@@ -1,4 +1,5 @@
 import heroPhone from "@/assets/confere-home.png";
+import { MapPin, DollarSign, Play } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -7,11 +8,12 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
-            <span className="inline-block mb-4 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-              🇦🇴 Feito em Angola, para Angola
+            <span className="inline-flex items-center gap-2 mb-4 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+              <MapPin className="w-4 h-4" />
+              Feito em Angola, para Angola
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-[3.2rem] font-extrabold leading-tight text-foreground">
-              Nunca Mais Pague a Mais nos Supermercados! 💰
+              Nunca Mais Pague a Mais nos Supermercados!
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-lg mx-auto md:mx-0">
               Confere automaticamente o valor das tuas compras e detecta erros de cobrança.{" "}
@@ -22,7 +24,8 @@ const Hero = () => {
                 href="#download"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-base font-bold text-primary-foreground shadow-lg shadow-primary/25 hover:opacity-90 transition-opacity animate-pulse-slow"
               >
-                ▶ Baixar na Play Store
+                <Play className="w-5 h-5 fill-current" />
+                Baixar na Play Store
               </a>
               <a
                 href="#como-funciona"

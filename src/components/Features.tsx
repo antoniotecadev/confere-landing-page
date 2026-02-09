@@ -3,7 +3,6 @@ import type { LucideIcon } from "lucide-react";
 
 interface Feature {
   icon: LucideIcon;
-  emoji: string;
   title: string;
   description: string;
   borderColor: string;
@@ -12,42 +11,36 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: ShoppingCart,
-    emoji: "🛍️",
     title: "Carrinhos Inteligentes",
     description: "Cria carrinhos por supermercado. Define orçamento diário e recebe alertas quando estiveres perto do limite.",
     borderColor: "border-t-primary",
   },
   {
     icon: Scale,
-    emoji: "⚖️",
     title: "Conferência Precisa",
     description: "Verde = Confere | Laranja = Cobraram a mais (reclama!) | Azul = Cobraram a menos (sortudo!)",
     borderColor: "border-t-success",
   },
   {
     icon: Camera,
-    emoji: "📸",
     title: "Provas Guardadas",
     description: "Tira fotos do talão como prova. Organização automática por compra. Essencial para reclamações.",
     borderColor: "border-t-warning",
   },
   {
     icon: BarChart3,
-    emoji: "📊",
     title: "Quanto Já Economizaste?",
     description: "Vê quanto economizaste com erros detectados, rankings de supermercados mais confiáveis e produtos mais comprados.",
     borderColor: "border-t-[hsl(270,60%,55%)]",
   },
   {
     icon: Star,
-    emoji: "🎯",
     title: "Aprende Contigo",
     description: "Sugere produtos que compras frequentemente. Alerta quando preços estão fora do normal.",
     borderColor: "border-t-info",
   },
   {
     icon: Volume2,
-    emoji: "🎵",
     title: "Som + Vibração",
     description: "Som positivo quando confere, som de alerta quando detecta erro. Feedback imediato e claro.",
     borderColor: "border-t-success",
@@ -69,8 +62,7 @@ const Features = () => (
             key={f.title}
             className={`bg-card rounded-2xl border border-border border-t-4 ${f.borderColor} p-6 card-hover shadow-sm`}
           >
-            <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl">{f.emoji}</span>
+            <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 mb-4">
               <f.icon className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-bold text-foreground mb-2">{f.title}</h3>

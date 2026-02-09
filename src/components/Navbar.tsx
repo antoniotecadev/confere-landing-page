@@ -26,7 +26,8 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2 text-xl font-bold text-primary">
-          🛒 Confere
+          <img src="/icon-1024x1024.png" alt="Confere" className="w-8 h-8" />
+          Confere
         </a>
 
         {/* Desktop */}
