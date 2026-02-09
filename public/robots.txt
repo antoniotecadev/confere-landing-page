@@ -1,6 +1,17 @@
-# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://confere.ao/sitemap.xml
+Sitemap: https://confere-lading-page.vercel.app/site.webmanifest
