@@ -53,6 +53,7 @@ const Navbar = () => {
           className="md:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>

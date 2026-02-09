@@ -1,4 +1,4 @@
-import heroPhone from "@/assets/hero-phone.png";
+import heroPhone from "@/assets/confere-home.png";
 
 const Hero = () => {
   return (
